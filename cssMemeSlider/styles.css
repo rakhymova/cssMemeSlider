@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    margin: 0; 
+    padding: 40px 0 0;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1, h2 {
+    margin: 0;
+}
+
+
+#slider {
+    margin: 0 auto;
+    width: 60%;
+    max-width: 100%;
+    background-color: #2f2f2f;
+    padding: 20px 30px 30px;
+    border-radius: 5px;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    /* height: 300px; */
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+ }
+ #slides .slide_2 {
+ }
+ #slides .slide_3 {
+ }
+ #slides .slide_4 {
+ }
+
+ .slide-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+ .slide-content img {
+    max-width: 100%;
+    /* width: 100%; */
+    max-height: 400px;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+ }
+ .slide-content p {
+    color: #fff;
+    margin-top: 40px;
+    font-size: 18px;
+ }
+
+ #bullets {
+    text-align: right;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
