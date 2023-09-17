@@ -4,57 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>CSS Meme Slider</title>
+    <title>CSS Meme Slider by Nurdana</title>
 </head>
 <body>
     <div class="container">
         <div class="slider" id="slider">
             
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="memeslider" id="slide1" checked>
+            <input type="radio" name="memeslider" id="slide2">
+            <input type="radio" name="memeslider" id="slide3">
+            <input type="radio" name="memeslider" id="slide4">
 
             <div id="slides">
-
-                <div id="overflow">
-                    <div class="inner">
-                       <div class="slide slide_1">
-                          <div class="slide-content">
+                <div id="overflow-wrapper">
+                    <div class="slides-wrapper">
+                       <div class="slide">
+                          <div class="slide-box">
                             <img src="assets/kkw.jpeg" class="m1" alt="img1">
                             <p>Kim, there's people that are dying</p>
                           </div>
                        </div>
-                       <div class="slide slide_2">
-                          <div class="slide-content">
+                       <div class="slide">
+                          <div class="slide-box">
                             <img src="assets/dwayne.jpeg" class="m2" alt="img2">
                             <p>Dwayne Johnson & The Rock are twins !!!</p>
                           </div>
                        </div>
-                       <div class="slide slide_3">
-                          <div class="slide-content">
+                       <div class="slide">
+                          <div class="slide-box">
                             <img src="assets/you.png" class="m3" alt="img3">
                             <p>Love this meme</p>
                           </div>
                        </div>
-                       <div class="slide slide_4">
-                          <div class="slide-content">
+                       <div class="slide">
+                          <div class="slide-box">
                             <img src="assets/cat.jpeg" class="m4" alt="img4">
                             <p>Crying meow is my aesthetics</p>
                           </div>
                        </div>
                     </div>
                  </div>
-
-                <!-- <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                </div> -->
             </div>
 
-            <div id="bullets">
+            <div id="nav-dots">
                 <label for="slide1"></label>
                 <label for="slide2"></label>
                 <label for="slide3"></label>
